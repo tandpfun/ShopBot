@@ -22,7 +22,7 @@ exports.run = async (client, message) => {
     }
     embed.setURL(data.product_url)
     embed.setImage(data.product_image)
-    embed.setDescription(`**Price:** ${data.product_price}\n**In Stock:** ${data.product_stock}\n**ID:** ${data.product_id}`)
+    embed.setDescription(`**Price:** $${data.product_price} USD\n**In Stock:** ${data.product_stock}\n**ID:** ${data.product_id}`)
     
     message.channel.send(embed)
   })
